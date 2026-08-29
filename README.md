@@ -1,6 +1,6 @@
 # Seymour's Second Neighborhood Conjecture through minimum outdegree eight
 
-This is an AI-generated Lean proof of Seymour's Second Neighborhood Conjecture for graphs having a vertex whose outdegree is at most eight. It assumes the result through outdegree seven, which is established in [Sadhukhan et al. (2026)](https://arxiv.org/abs/2606.30588).
+This is an AI-generated Lean proof of Seymour's Second Neighborhood Conjecture for graphs having a vertex whose outdegree is at most eight. It assumes the analogous result for outdegree seven, which is established in [Sadhukhan et al. (2026)](https://arxiv.org/abs/2606.30588).
 
 The statement of the theorem is in `SeymourEight.lean`, using the definitions in `Definitions.lean`.
 
