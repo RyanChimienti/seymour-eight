@@ -1,0 +1,16 @@
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M0A0B0
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M0A0B1
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M0A1B0
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M0A0B2
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M0A1B1
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M0A0B3
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M0A1B2
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M1A0B0
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M1A0B1
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M1A1B0
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M1A0B2
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M1A1B1
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M2A0B0
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M2A0B1
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M2A1B0
+import SeymourEight.Certificates.BSevenKOne.TightEpsilonOne.RootRows.M3A0B0

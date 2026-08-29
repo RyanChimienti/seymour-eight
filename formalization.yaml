@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: >-
+    Seymour's second neighborhood conjecture through minimum outdegree eight, assuming the
+    analogous result for seven
+  description: >-
+    A Lean 4 proof of Seymour's Second Neighborhood Conjecture for graphs having a vertex with
+    outdegree at most eight. The proof assumes the analogous result for outdegree seven, which is
+    established in the literature.
+
+    This result appears to be novel at the time of writing (8/28/2026). It was AI-generated with
+    light guidance from me. I suspect the proof is a straightforward extension of Sadhukan et al.
+    referenced below, as I instructed the AI to extend that paper and saw that it was using much of
+    the same notation.
+
+    Because it relies heavily on UNSAT determinations by bv_decide, it is fairly compute-intensive.
+    It must be run with a limited number of threads to avoid exhausting the available RAM (1 thread
+    per 16GB of available RAM). Running with 1 thread, it takes about 5.5 hours to build.
+
+  authors:
+    - "Ryan Chimienti"
+  license: "MIT"
+
+sources:
+  - title: >-
+      Seymour's second neighborhood conjecture through minimum outdegree eight, assuming the
+      analogous result for seven
+    authors:
+      - "Ryan Chimienti"
+    type: "original-proof"
+    relationship: "independently-proves"
+
+  - title: >-
+      A proof of Seymour's second neighborhood conjecture for oriented graphs with minimum
+      out-degree equal to 7
+    authors:
+      - "Arpan Sadhukhan"
+      - "R. B. Sandeep"
+      - "Sagnik Sen"
+    id: "https://arxiv.org/abs/2606.30588"
+    type: "paper"
+    relationship: "background"
+    note: >-
+      Supplies the minimum-outdegree-seven result that this formalization takes as an assumption
+      and the proof strategy that the AI was instructed to extend.
+    author_endorsement: "not-contacted"
+
+classification:
+  arxiv:
+    - "math.CO"
+  msc2020:
+    - "05C20"
+
+status:
+  sorry_count: 0
+  sorry_in_definitions: 0
+  main_results:
+    - declaration: "SeymourEight.seymourEight"
+      file: "SeymourEight.lean"
+      sorry_count: 0
+      literature_dependencies:
+        - statement: >-
+            Every finite oriented graph of minimum outdegree at most seven has a Seymour vertex.
+          source: >-
+            A proof of Seymour's second neighborhood conjecture for oriented graphs with minimum
+            out-degree equal to 7
+
+automation:
+  methods:
+    - method: "agent"
+
+review:
+  status: "self-assessed"
+  notes: >-
+    I confirmed that the Lean statement matches the natural-language description in this project. I
+    confirmed that the Lean proof of the theorem does not use any loopholes that would weaken or
+    invalidate it, to the best of my knowledge. I ran the Lean compiler and confirmed that it
+    verifies the main theorem.
+
+    I did not closely examine the contents of the Lean proof. I only studied it enough to convince
+    myself that it was not using any weakening loopholes or exploits.
+
+alignment:
+  namespace: "SeymourEight"
+  statements:
+    - source: >-
+        Seymour's second neighborhood conjecture through minimum outdegree eight, assuming the
+        analogous result for seven
+      lean: "SeymourEight.seymourEight"
+      module: "SeymourEight"
+      status: "proved"
